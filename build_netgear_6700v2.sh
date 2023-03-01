@@ -21,7 +21,7 @@ cd openwrt-*/
 # clean previous images
 make clean
 
-make image PROFILE="netgear_r6700" \
+make image PROFILE="netgear_r6700-v2" \
            PACKAGES="block-mount kmod-fs-ext4 kmod-usb-storage blkid mount-utils swap-utils e2fsprogs fdisk luci dnsmasq" \
            FILES="${BASEDIR}/files/" \
             BIN_DIR="$OUTPUT"
